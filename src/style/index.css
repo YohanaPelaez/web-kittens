@@ -1,0 +1,118 @@
+/* Inicio del sitio */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+:root{
+    /* Variables de CSS */
+    --color-light-gray: #EBEBEB;
+    --color-nice-blue: #2B87F3;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}
+
+/* Normalizar CSS */
+*,
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1250px;
+    width: 100%;
+    /* Para alinear al centro */
+    margin: 0 auto;  
+}
+
+.page-header{
+    background-color: var(--color-light-gray);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+}
+.page-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.header__logo{
+    width: 50px;
+
+}
+.header__navegation{
+    max-width: 348px;
+    width: 100%;
+}
+.header__navegation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.header__navegation a{  
+    text-decoration: none;
+    font-size: 16px;
+    text-transform:uppercase;
+    color: var(--color-nice-blue)
+}
+.header__navegation a:hover {
+    font-weight: 900;  
+}
+
+
+main .container{
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+main{
+     background-color: #ddf8ff;
+}
+
+main img{
+    max-width: 250px;
+    width: 100%;
+    
+}
+main h1{
+    max-width: 500px;
+    font-size: 50px;
+    font-weight: 700px;
+    color: var(--color-nice-blue);
+    text-align: center;
+}
+.box-cats{
+    max-width: 550px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.header__navegation .link-active {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .page-header .container{
+        flex-direction: column;
+    }
+    
+    .box-cats{
+        flex-direction: column;
+        align-items: center;
+                
+    }
+}
+
